@@ -122,7 +122,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Имя: " + this.surname + " Фамилия: " + this.name + " Отчество: " + this.patronymic + " Дата Рождения: " + this.birthday + " Домашний адрес: " + this.add + " Телефон: " + this.phone + " Факультет: " + this.faculty + " Курс: " + this.course + " Группа: " + this.group;
+        return "Surname: " + this.surname + " Name: " + this.name + " Patronymic: " + this.patronymic + " Birthday: " + this.birthday + " Home addres: " + this.add + " Phone: " + this.phone + " Faculty: " + this.faculty + " Course: " + this.course + " Group: " + this.group;
     }
 }
 

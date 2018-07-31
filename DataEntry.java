@@ -9,16 +9,17 @@ public class DataEntry {
     ArrayList<Student> students = new ArrayList<>();
 
     public void initStudent() {
+        Sorting sorting = new Sorting();
         Student student;
 
         Scanner sc = new Scanner(System.in);
-        String ansver1 = "YES";
-        String ansver2 = "NO";
+        String answer1 = "YES";
+        String answer2 = "NO";
 
         while (true) {
             System.out.println("Enter student? Choise YES or NO");
             String answ = sc.next();
-            if (ansver1.equalsIgnoreCase(answ)) {
+            if (answer1.equalsIgnoreCase(answ)) {
                 student = new Student();
                 System.out.println("Enter surname: ");
                 student.setSurname(sc.next());
@@ -42,7 +43,9 @@ public class DataEntry {
                 for (Student s : students) {
                     s.setId();
                 }
-            } else if (ansver2.equalsIgnoreCase(answ)) show();
+            } else if (answer2.equalsIgnoreCase(answ)) {
+                sorting.sortingStudent();
+            }
 
 
         }
