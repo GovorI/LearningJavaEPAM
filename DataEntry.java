@@ -1,4 +1,4 @@
-package com.company.chapter3;
+
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -6,18 +6,18 @@ import java.util.Scanner;
 
 public class DataEntry {
 
-    ArrayList<Student> students = new ArrayList<>();
+    private ArrayList<Student> students = new ArrayList<>();
 
-    public void initStudent() {
+    void initStudent() {
         Sorting sorting = new Sorting();
         Student student;
 
         Scanner sc = new Scanner(System.in);
-        String answer1 = "YES";
-        String answer2 = "NO";
+        String answer1 = "Y";
+        String answer2 = "N";
 
         while (true) {
-            System.out.println("Enter student? Choise YES or NO");
+            System.out.println("Enter student? Choise YES(Y) or NO(N)");
             String answ = sc.next();
             if (answer1.equalsIgnoreCase(answ)) {
                 student = new Student();

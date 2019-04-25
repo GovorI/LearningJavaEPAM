@@ -1,9 +1,9 @@
-package com.company.chapter3;
+
 
 import java.util.Scanner;
 
-public class Sorting {
-    public void sortingStudent() {
+class Sorting {
+    void sortingStudent() {
         Scanner sc = new Scanner(System.in);
         String answ1 = "1";
         String answ2 = "2";

@@ -1,4 +1,4 @@
-package com.company.chapter3;
+
 
 //        Создать классы, спецификации которых приведены ниже. Определить конструкторы
 //        и методы setТип(), getТип(), toString(). Определить дополнительно
@@ -14,8 +14,8 @@ package com.company.chapter3;
 //        d) список учебной группы.
 
 
-public class Student {
-    private int id = 0;
+public class Student implements Comparable{
+    private static int id = 0;
     private String surname;
     private String name;
     private String patronymic;
@@ -123,6 +123,12 @@ public class Student {
     @Override
     public String toString() {
         return "Surname: " + this.surname + " Name: " + this.name + " Patronymic: " + this.patronymic + " Birthday: " + this.birthday + " Home addres: " + this.add + " Phone: " + this.phone + " Faculty: " + this.faculty + " Course: " + this.course + " Group: " + this.group;
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        //todo реализовать сортировку
+        return 0;
     }
 }
 
